@@ -4,11 +4,19 @@
     box-sizing: border-box;
 }
 
+h1 {
+    font-family: Verdana;
+}
+
 .container {
     display: flex;
     padding-left: 150px;
     padding-right: 150px;
-    padding-top: 75px;
+    /*padding-top: 75px;*/
+    /*mask-border-mode: alpha;*/
+    /*border-top: 5px;*/
+    /*border-color: black;
+    border-style: dotted;*/
 }
 
 .box-1 {
