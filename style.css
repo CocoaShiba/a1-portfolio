@@ -19,6 +19,14 @@ h2 {
     text-align: center;
 }
 
+.text-center {
+    text-align: center;
+}
+
+.text-size {
+    font-size: 26px;
+}
+
 /*
 table {
   border-spacing: 0em;
@@ -40,15 +48,10 @@ td {
     font-size: 1.5em;
 }
 
-.descriptive-text {
-    font-size: 26px;
-}
-
 .container {
-    display: flex;
-    padding-left: 150px;
-    padding-right: 150px;
-    /*padding-top: 75px;*/
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-top: 10px;
     /*mask-border-mode: alpha;*/
     /*border-top: 5px;*/
     /*border-color: black;
@@ -56,7 +59,6 @@ td {
 }
 
 .box-1 {
-    flex: 1;
     height: 550px;
     /*text-align: center;*/
     background-color: antiquewhite;
