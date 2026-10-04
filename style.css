@@ -79,6 +79,25 @@ a {
     border-style: dotted;
 } */
 
+.box-container {
+    display: flex;         /* Turns the container into a flexbox row */
+    gap: 15px;             /* Adds spacing between the boxes */
+    justify-content: center; /* Aligns boxes to the center (can also use space-between, flex-start, etc.) */
+}
+
+.box {
+    flex: 1;               /* Makes all boxes grow and shrink equally to fill space */
+    /* background-color: #3498db;
+    color: white; */
+    padding: 20px;
+    text-align: center;
+    /* border-radius: 8px; */
+
+    border: 20px solid rgb(255, 255, 255);
+    clip-path: inset(20px 20px 0px 20px round 10px);
+    background-color: rgb(255, 255, 255);
+}
+
 .shadow-wrapper
 {
     filter: drop-shadow(0px 0px 6px rgb(31, 31, 36));
@@ -105,6 +124,8 @@ a {
     /* margin-top: 2em;
     margin-left: 10%;
     margin-right: 10%; */
+
+    width: 30em;
 
     padding-top: 2em;
     padding-left: 2em;
