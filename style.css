@@ -42,16 +42,21 @@ h2 {
     text-align: center;
 }
 
+td {
+	padding: 1em;
+}
+
+a {
+    text-decoration: none;
+    color: #4a4b58;
+}
+
 .text-center {
     text-align: center;
 }
 
 .text-size {
     font-size: 26px;
-}
-
-td {
-	padding: 1em;
 }
 
 .navigation-bar {
@@ -92,18 +97,26 @@ td {
     /* border-image: linear-gradient(to top, white, transparent) 30 round; */
     /* border-image: url(border.png) 30 round; */
     clip-path: inset(20px 20px 0px 20px round 10px);
-    /* padding-left: 10%;
-    padding-right: 10%;
-    padding-top: 10px; */
     height: 550px;
     background-color: rgb(255, 255, 255);
 }
 
 .box-2 {
-    flex: 1;
-    height: 150px;
-    text-align: center;
-    background-color: whitesmoke;
+    /* margin-top: 2em;
+    margin-left: 10%;
+    margin-right: 10%; */
+
+    padding-top: 2em;
+    padding-left: 2em;
+    padding-right: 2em;
+
+    border: 20px solid rgb(255, 255, 255);
+    /* box-shadow: 0 2px 10px 2px rgb(0 0 0 / 1);  */
+    /* border-image: linear-gradient(to top, white, transparent) 30 round; */
+    /* border-image: url(border.png) 30 round; */
+    clip-path: inset(20px 20px 0px 20px round 10px);
+    height: 550px;
+    background-color: rgb(255, 255, 255);
 }
 
 .box-3 {
