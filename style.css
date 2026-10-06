@@ -11,6 +11,14 @@
     /* transform:translate(30%,0%); */
 }
 
+#projects-photo {
+    border-style: dotted;
+    border-color: black;
+    margin-top: 2em;
+    margin-bottom: 2em;
+    width: 25em;
+}
+
 #about-me-table {
     width: 100%;
 }
@@ -40,6 +48,7 @@ h1 {
 
 h2 {
     text-align: center;
+    font-size: 28px;
 }
 
 td {
@@ -56,7 +65,11 @@ a {
 }
 
 .text-size {
-    font-size: 26px;
+    font-size: 30px;
+}
+
+.description-text-size {
+    font-size: 20px;
 }
 
 .navigation-bar {
@@ -86,7 +99,8 @@ a {
 }
 
 .box {
-    flex: 1;               /* Makes all boxes grow and shrink equally to fill space */
+    /*flex: 1;               /* Makes all boxes grow and shrink equally to fill space */
+    width: 30em;
     /* background-color: #3498db;
     color: white; */
     padding: 20px;
