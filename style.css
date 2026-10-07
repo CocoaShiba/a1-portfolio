@@ -51,7 +51,7 @@ body {
 
 h1 {
     text-align: center;
-    font-size: 48px;
+    font-size: 44px;
 }
 
 h2 {
@@ -73,7 +73,7 @@ a {
 }
 
 .description-text-size {
-    font-size: 18px;
+    font-size: 22px;
 }
 
 .navigation-bar {
@@ -110,7 +110,7 @@ a {
 
 .box {
     flex: 1;               /* Makes all boxes grow and shrink equally to fill space */
-    width: 20em;
+    width: 10em;
     background-color: #3498db;
 
     padding: 20px;
@@ -120,6 +120,13 @@ a {
     border: 20px solid rgb(255, 255, 255);
     clip-path: inset(20px 20px 0px 20px round 10px);
     background-color: rgb(255, 255, 255);
+}
+
+@media (min-width: 1000px)
+{
+    .box {
+        width: 20em;
+    }
 }
 
 @media (min-width: 1500px) {
