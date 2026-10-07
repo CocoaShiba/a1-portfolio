@@ -4,11 +4,21 @@
     box-sizing: border-box;
 }
 
-#photo {
+#about-me-photo {
     border-style: dotted;
     border-radius: 9999px;
-    border-color: black;
+    border-color: rgba(0, 0, 0, 0);
+    width: 0em;
+    
     /* transform:translate(30%,0%); */
+}
+
+#about-me-table {
+    width: 100%;
+}
+
+#about-me-text-size {
+    font-size: 24px;
 }
 
 #projects-photo {
@@ -17,14 +27,6 @@
     margin-top: 2em;
     margin-bottom: 2em;
     width: 15em;
-}
-
-#about-me-table {
-    width: 100%;
-}
-
-#about-me-text-size {
-    font-size: 36px;
 }
 
 body {
@@ -51,7 +53,7 @@ body {
 
 h1 {
     text-align: center;
-    font-size: 40px;
+    font-size: 38px;
 }
 
 h2 {
@@ -83,7 +85,7 @@ a {
     padding-left: 1em;
     padding-top: 0em;
     height: 3.25em;
-    font-size: 1.5em;
+    font-size: 18px;
 }
 
 /* .container {
@@ -103,14 +105,8 @@ a {
     flex-direction: column;
 }
 
-/* @media (max-width: 576px) {
-    .box-container {
-        flex-direction: column;
-    }
-} */
-
 .box {
-    flex: 1;               /* Makes all boxes grow and shrink equally to fill space */
+                 /* Makes all boxes grow and shrink equally to fill space */
     background-color: #3498db;
 
     padding: 20px;
@@ -119,7 +115,7 @@ a {
 
     border: 20px solid rgb(255, 255, 255);
     clip-path: inset(20px 20px 0px 20px round 10px);
-    background-color: rgb(36, 35, 35);
+    background-color: rgb(255, 255, 255);
 }
 
 @media (min-width: 1000px)
@@ -129,18 +125,24 @@ a {
     }
     .box {
         width: 20em;
-        background-color: rgb(110, 110, 110);
     }
 
-    h1 {
-        font-size: 38px;
+    /* h1 {
+        font-size: 42px;
+    } */
+    #about-me-photo {
+        width: 15em;
+        border-color: rgb(0,0,0,1);
+    }
+
+    .navigation-bar {
+        font-size: 24px;
     }
 }
 
 @media (min-width: 1500px) {
     .box {
         width: 30em;
-        background-color: rgb(255, 255, 255);
     }
 
     h1 {
@@ -158,22 +160,15 @@ a {
     #projects-photo {
         width: 25em;
     }
-}
 
-/* Tablets (768px and up) */
-/* @media (min-width: 768px) {
-  .box {
-    width: 25em;
-    background-color: rgb(160, 160, 160);
-  }
-}
+    #about-me-text-size {
+        font-size: 36px;
+    }
 
-@media (min-width: 1024px) {
-  .box {
-    width: 30em;
-    background-color: rgb(255, 255, 255);
-  }
-} */
+    #about-me-photo {
+        width: 20em;
+    }
+}
 
 .shadow-wrapper
 {
@@ -193,7 +188,7 @@ a {
     /* border-image: linear-gradient(to top, white, transparent) 30 round; */
     /* border-image: url(border.png) 30 round; */
     clip-path: inset(20px 20px 0px 20px round 10px);
-    height: 550px;
+    
     background-color: rgb(255, 255, 255);
 }
 
