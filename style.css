@@ -9,8 +9,6 @@
     border-radius: 9999px;
     border-color: rgba(0, 0, 0, 0);
     width: 0em;
-    
-    /* transform:translate(30%,0%); */
 }
 
 #about-me-table {
@@ -30,18 +28,12 @@
 }
 
 body {
-    /* Fallback background color if gradients fail to load */
+    /*Fallback if gradient doesn't load*/
     background-color: #9887c0; 
     
-    /* The full-page gradient definition */
     background-image: linear-gradient(0deg, #9887c0 0%, #9887c0 35%, #a3cce7 100%);
     
-    /* Ensures the background stays fixed while scrolling contents */
-    background-attachment: fixed;
-
-    /*padding: 10px;  Optional spacing inside the border */
     min-height: 100vh;
-    box-sizing: border-box;
     border-left: 10px solid rgb(255, 255, 255);
     border-right: 10px solid rgb(255, 255, 255);
     border-bottom: 10px solid rgb(255, 255, 255);
@@ -85,28 +77,31 @@ a {
     padding-left: 1em;
     padding-top: 0em;
     height: 3.25em;
-    font-size: 18px;
+    font-size: 24px;
 }
 
-/* .container {
-    padding-left: 5%;
-    padding-right: 5%;
-    padding-top: 10px;
-    /*mask-border-mode: alpha;*/
-    /*border-top: 5px;*/
-    /*border-color: black;
-    border-style: dotted;
-} */
+.about-me-box {
+    margin-top: 2em;
+    margin-left: 10%;
+    margin-right: 10%;
+
+    padding-top: 2em;
+    padding-left: 2em;
+    padding-right: 2em;
+    border: 20px solid rgb(255, 255, 255);
+    clip-path: inset(20px 20px 0px 20px round 10px);
+    
+    background-color: rgb(255, 255, 255);
+}
 
 .box-container {
-    display: flex;         /* Turns the container into a flexbox row */
-    gap: 15px;             /* Adds spacing between the boxes */
-    justify-content: center; /* Aligns boxes to the center (can also use space-between, flex-start, etc.) */
+    display: flex;         
+    gap: 15px;             
+    justify-content: center;
     flex-direction: column;
 }
 
 .box {
-                 /* Makes all boxes grow and shrink equally to fill space */
     background-color: #3498db;
 
     padding: 20px;
@@ -118,6 +113,11 @@ a {
     background-color: rgb(255, 255, 255);
 }
 
+.shadow-wrapper
+{
+    filter: drop-shadow(0px 0px 6px rgb(31, 31, 36));
+}   
+
 @media (min-width: 1000px)
 {
     .box-container {
@@ -127,16 +127,9 @@ a {
         width: 20em;
     }
 
-    /* h1 {
-        font-size: 42px;
-    } */
     #about-me-photo {
         width: 15em;
         border-color: rgb(0,0,0,1);
-    }
-
-    .navigation-bar {
-        font-size: 24px;
     }
 }
 
@@ -168,27 +161,5 @@ a {
     #about-me-photo {
         width: 20em;
     }
-}
-
-.shadow-wrapper
-{
-    filter: drop-shadow(0px 0px 6px rgb(31, 31, 36));
-}   
-
-.box-1 {
-    margin-top: 2em;
-    margin-left: 10%;
-    margin-right: 10%;
-
-    padding-top: 2em;
-    padding-left: 2em;
-    padding-right: 2em;
-    border: 20px solid rgb(255, 255, 255);
-    /* box-shadow: 0 2px 10px 2px rgb(0 0 0 / 1);  */
-    /* border-image: linear-gradient(to top, white, transparent) 30 round; */
-    /* border-image: url(border.png) 30 round; */
-    clip-path: inset(20px 20px 0px 20px round 10px);
-    
-    background-color: rgb(255, 255, 255);
 }
 
