@@ -5,9 +5,10 @@
 }
 
 #about-me-photo {
-    border-style: dotted;
+    border-style: solid;
     border-radius: 9999px;
-    border-color: rgba(0, 0, 0, 0);
+    border-color: rgb(18, 18, 18);
+    border-width: 0em;
     width: 0em;
 }
 
@@ -55,8 +56,9 @@ a {
 }
 
 .projects-photo {
-    border-style: dotted;
-    border-color: black;
+    border-style: solid;
+    border-color: rgb(18, 18, 18);
+    border-width: 0.1em;
     margin-top: 2em;
     margin-bottom: 2em;
     width: 25em;
@@ -134,6 +136,7 @@ a {
     #about-me-photo {
         width: 15em;
         border-color: rgb(0,0,0,1);
+        border-width: 0.1em;
     }
 }
 
